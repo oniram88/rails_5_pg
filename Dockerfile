@@ -1,6 +1,8 @@
 FROM ruby:2.4.1-slim-jessie
 
-RUN apt-get update -qq && apt-get install -y -qq curl build-essential libmysqlclient-dev mysql-client imagemagick openssh-client libmagickwand-dev
+RUN apt-get update -qq && apt-get install -y -qq curl build-essential \
+    libmysqlclient-dev mysql-client imagemagick openssh-client \
+    libmagickwand-dev git
 RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 # Install yarn
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
