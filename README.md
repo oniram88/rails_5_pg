@@ -1,0 +1,1 @@
+compilare l'immagine
