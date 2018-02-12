@@ -3,7 +3,7 @@ FROM ruby:2.4.1-slim-jessie
 RUN apt-get update -qq && apt-get install -y -qq curl build-essential \
     imagemagick openssh-client \
     libmagickwand-dev git libsqlite3-dev \
-    postgresql-server-dev-all
+    postgresql-server-dev-all postgresql-client
 
 RUN curl -sL https://deb.nodesource.com/setup_7.x | bash -
 # Install yarn
